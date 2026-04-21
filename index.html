@@ -11,7 +11,7 @@
   --aq:#00e5ff;--aq2:#00b8cc;
   --y:#ffcc00;
   --dk:#07080a;--dk2:#0d0f12;--dk3:#13161a;--dk4:#1a1e24;
-  --tx:#ffffff;--tx2:#b8bfc8;--tx3:#6b7280;
+  --tx:#ffffff;--tx2:#d0cce8;--tx3:#9490b8;
   --bd:rgba(255,255,255,0.08);--bd2:rgba(0,255,136,0.2);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -25,22 +25,24 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;justify-content
 .nav-links a:hover{color:var(--grn)}
 .nav-cta{background:var(--grn);color:#07080a;padding:10px 26px;font-family:"Montserrat",sans-serif;font-size:0.82rem;font-weight:700;text-decoration:none;border-radius:6px;transition:all .2s;border:none;cursor:pointer}
 .nav-cta:hover{background:var(--grn2);transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,255,136,0.35)}
-.hero{padding:110px 48px 60px;text-align:center;background:var(--dk);position:relative;overflow:hidden}
+.hero{padding:130px 48px 80px;text-align:center;background:var(--dk);position:relative;overflow:hidden}
 .orb1{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,255,136,0.08) 0%,transparent 70%);top:-200px;left:50%;transform:translateX(-50%);pointer-events:none}
 .orb2{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(0,229,255,0.06) 0%,transparent 70%);bottom:-100px;right:5%;pointer-events:none}
 .hero-inner{position:relative;z-index:2;max-width:900px;margin:0 auto}
-.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,255,136,0.08);border:1px solid rgba(0,255,136,0.25);color:var(--grn);font-family:"Montserrat",sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:2px;padding:7px 16px;border-radius:100px;margin-bottom:28px;text-transform:uppercase}
-.badge::before{content:"";width:7px;height:7px;background:var(--grn);border-radius:50%;animation:pulse 1.8s ease-in-out infinite}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,204,0,0.1);border:1px solid rgba(255,204,0,0.4);color:var(--y);font-family:"Montserrat",sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:2px;padding:9px 20px;border-radius:100px;margin-bottom:48px;text-transform:uppercase}
+.badge::before{content:"";width:7px;height:7px;background:var(--y);border-radius:50%;animation:pulse 1.8s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
-.hero h1{font-family:"Montserrat",sans-serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:700;line-height:1.15;margin-bottom:14px;color:#fff}
+.hero h1{font-family:"Montserrat",sans-serif;font-weight:700;line-height:1.2;margin-bottom:0;color:#fff}
 .hero h1 span{color:var(--grn)}
-.hero-sub{font-size:1rem;color:var(--tx2);margin-bottom:36px;font-weight:400;max-width:600px;margin-left:auto;margin-right:auto}
-.hero-img-box{width:320px;height:320px;border:2px solid rgba(0,255,136,0.2);border-radius:16px;margin:0 auto 36px;background:var(--dk3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--tx3);font-size:0.7rem;letter-spacing:2px;font-family:"Montserrat",sans-serif;text-transform:uppercase;position:relative;overflow:hidden;box-shadow:0 0 40px rgba(0,255,136,0.06)}
+.hero-title-main{font-size:clamp(2.8rem,6vw,5rem);display:block;margin-bottom:16px;letter-spacing:-1px}
+.hero-title-sub{font-size:clamp(1.6rem,3.5vw,2.8rem);display:block;margin-bottom:40px;color:var(--grn)}
+.hero-sub{font-size:1.15rem;color:#ddd8f0;margin-bottom:48px;font-weight:400;max-width:640px;margin-left:auto;margin-right:auto;line-height:1.8}
+.hero-img-box{width:560px;height:420px;border:2px solid rgba(0,255,136,0.2);border-radius:20px;margin:0 auto 48px;background:var(--dk3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;color:#8880aa;font-size:0.78rem;letter-spacing:2px;font-family:"Montserrat",sans-serif;text-transform:uppercase;position:relative;overflow:hidden;box-shadow:0 0 60px rgba(0,255,136,0.08)}
 .hero-img-box img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;border-radius:14px}
-.stat-boxes{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:32px}
-.stat-box{background:var(--dk3);border:1px solid var(--bd);border-radius:10px;padding:16px 28px;text-align:center;min-width:110px}
-.stat-n{font-family:"Montserrat",sans-serif;font-size:1.8rem;font-weight:700;color:var(--grn);display:block;line-height:1;margin-bottom:4px}
-.stat-l{font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--tx3);font-weight:500}
+.stat-boxes{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:48px}
+.stat-box{background:var(--dk3);border:1px solid var(--bd);border-radius:12px;padding:24px 36px;text-align:center;min-width:140px}
+.stat-n{font-family:"Montserrat",sans-serif;font-size:2.6rem;font-weight:700;color:var(--grn);display:block;line-height:1;margin-bottom:8px}
+.stat-l{font-size:0.78rem;letter-spacing:2px;text-transform:uppercase;color:#c8c0e0;font-weight:600}
 .btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;font-family:"Montserrat",sans-serif;font-size:0.88rem;font-weight:700;text-decoration:none;border:none;cursor:pointer;border-radius:8px;transition:all .25s;letter-spacing:0.5px}
 .btn-pro{background:var(--grn);color:#07080a}
@@ -224,7 +226,7 @@ footer p{font-size:0.72rem;color:var(--tx3);font-family:"Montserrat",sans-serif;
   nav{padding:0 20px}
   .nav-links{display:none}
   .hero{padding:90px 20px 48px}
-  .hero-img-box{width:260px;height:260px}
+  .hero-img-box{width:90%;height:280px}
   .sec{padding:56px 20px}
   .urgency{padding:14px 20px;gap:14px}
   .urg-sep{display:none}
@@ -256,7 +258,7 @@ footer p{font-size:0.72rem;color:var(--tx3);font-family:"Montserrat",sans-serif;
   <div class="orb1"></div><div class="orb2"></div>
   <div class="hero-inner">
     <div class="badge fu fu1">Founders Edition &middot; 50 Units &middot; Ships August 2026</div>
-    <h1 class="fu fu2">Anime LED Gaming Light<br><span>Built Different. Lit Different.</span></h1>
+    <h1 class="fu fu2"><span class="hero-title-main">Anime LED Gaming Light</span><span class="hero-title-sub">Built Different. Lit Different.</span></h1>
     <p class="hero-sub fu fu2">The world's first patented smart LED mirror panel &mdash; fusing light, art, sound, and reflection into one immersive frame.</p>
     <div class="hero-img-box fu fu3">
       <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect x="6" y="6" width="40" height="40" rx="6" stroke="rgba(0,255,136,0.3)" stroke-width="1.5" stroke-dasharray="5 4"/><circle cx="26" cy="26" r="10" stroke="rgba(0,255,136,0.3)" stroke-width="1.5"/></svg>
@@ -489,6 +491,66 @@ footer p{font-size:0.72rem;color:var(--tx3);font-family:"Montserrat",sans-serif;
     <div class="srow"><div class="sc">Included Arts</div><div class="sc sc-g">1 Anime Art Panel</div><div class="sc sc-a">2 Anime Art Panels</div></div>
     <div class="srow"><div class="sc">Multi-Unit Sync</div><div class="sc sc-g">Up to 8 panels</div><div class="sc sc-a">Up to 8 panels</div></div>
     <div class="srow"><div class="sc">Early Bird Price</div><div class="sc sc-g" style="font-size:1rem;font-weight:700">$517 <span style="font-size:.72rem;color:var(--tx3);font-weight:400">save $222</span></div><div class="sc sc-a" style="font-size:1rem;font-weight:700">$419 <span style="font-size:.72rem;color:var(--tx3);font-weight:400">save $180</span></div></div>
+  </div>
+</section>
+
+
+<section class="sec sec-alt">
+  <span class="sec-tag">Competitive Analysis</span>
+  <h2 class="sec-h">Why IA LED Lights Win</h2>
+  <p class="sec-p">See how IllumiArts stacks up against everything else on the market.</p>
+  <div style="max-width:700px;margin:0 auto;overflow:hidden;border-radius:16px;border:1px solid var(--bd)">
+    <!-- Header Row -->
+    <div style="display:grid;grid-template-columns:1.4fr 1.3fr 1fr;background:var(--dk4)">
+      <div style="padding:18px 20px;font-family:'Montserrat',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--tx3)">Feature</div>
+      <div style="padding:18px 20px;text-align:center;background:var(--grn);border-radius:12px 12px 0 0;margin:8px 8px 0">
+        <div style="font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:700;color:#07080a">IA LED Lights</div>
+      </div>
+      <div style="padding:18px 20px;text-align:center">
+        <div style="font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:700;color:var(--tx2)">Others</div>
+      </div>
+    </div>
+    <!-- Rows -->
+    <div style="display:grid;grid-template-columns:1.4fr 1.3fr 1fr;border-top:1px solid var(--bd);background:var(--dk3)">
+      <div style="padding:16px 20px;font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:600;color:var(--tx2);display:flex;align-items:center">Customization</div>
+      <div style="padding:16px 20px;text-align:center;background:rgba(0,255,136,0.06);display:flex;align-items:center;justify-content:center"><span style="font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:600;color:var(--grn)">Highly Customizable</span></div>
+      <div style="padding:16px 20px;text-align:center;display:flex;align-items:center;justify-content:center"><span style="font-size:0.82rem;color:var(--tx3)">Limited Options</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.4fr 1.3fr 1fr;border-top:1px solid var(--bd);background:var(--dk2)">
+      <div style="padding:16px 20px;font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:600;color:var(--tx2);display:flex;align-items:center">Addressable LED Technology</div>
+      <div style="padding:16px 20px;text-align:center;background:rgba(0,255,136,0.06);display:flex;align-items:center;justify-content:center"><span style="color:var(--grn);font-size:1.2rem;font-weight:700">&#10003;</span></div>
+      <div style="padding:16px 20px;text-align:center;display:flex;align-items:center;justify-content:center"><span style="color:var(--tx3);font-size:1.1rem;font-weight:700">&times;</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.4fr 1.3fr 1fr;border-top:1px solid var(--bd);background:var(--dk3)">
+      <div style="padding:16px 20px;font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:600;color:var(--tx2);display:flex;align-items:center">Dual-Purpose</div>
+      <div style="padding:16px 20px;text-align:center;background:rgba(0,255,136,0.06);display:flex;align-items:center;justify-content:center"><span style="font-family:'Montserrat',sans-serif;font-size:0.8rem;font-weight:600;color:var(--grn)">Day Mirror &amp; Night Lights</span></div>
+      <div style="padding:16px 20px;text-align:center;display:flex;align-items:center;justify-content:center"><span style="color:var(--tx3);font-size:1.1rem;font-weight:700">&times;</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.4fr 1.3fr 1fr;border-top:1px solid var(--bd);background:var(--dk2)">
+      <div style="padding:16px 20px;font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:600;color:var(--tx2);display:flex;align-items:center">Art and Design</div>
+      <div style="padding:16px 20px;text-align:center;background:rgba(0,255,136,0.06);display:flex;align-items:center;justify-content:center"><span style="color:var(--grn);font-size:1.2rem;font-weight:700">&#10003;</span></div>
+      <div style="padding:16px 20px;text-align:center;display:flex;align-items:center;justify-content:center"><span style="color:var(--tx3);font-size:1.1rem;font-weight:700">&times;</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.4fr 1.3fr 1fr;border-top:1px solid var(--bd);background:var(--dk3)">
+      <div style="padding:16px 20px;font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:600;color:var(--tx2);display:flex;align-items:center">Smart App Control</div>
+      <div style="padding:16px 20px;text-align:center;background:rgba(0,255,136,0.06);display:flex;align-items:center;justify-content:center"><span style="color:var(--grn);font-size:1.2rem;font-weight:700">&#10003;</span></div>
+      <div style="padding:16px 20px;text-align:center;display:flex;align-items:center;justify-content:center"><span style="font-size:0.8rem;color:var(--tx3)">Limited</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.4fr 1.3fr 1fr;border-top:1px solid var(--bd);background:var(--dk2)">
+      <div style="padding:16px 20px;font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:600;color:var(--tx2);display:flex;align-items:center">Sound-Reactive</div>
+      <div style="padding:16px 20px;text-align:center;background:rgba(0,255,136,0.06);display:flex;align-items:center;justify-content:center"><span style="color:var(--grn);font-size:1.2rem;font-weight:700">&#10003;</span></div>
+      <div style="padding:16px 20px;text-align:center;display:flex;align-items:center;justify-content:center"><span style="font-size:0.8rem;color:var(--tx3)">Limited</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.4fr 1.3fr 1fr;border-top:1px solid var(--bd);background:var(--dk3)">
+      <div style="padding:16px 20px;font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:600;color:var(--tx2);display:flex;align-items:center">Energy Efficiency</div>
+      <div style="padding:16px 20px;text-align:center;background:rgba(0,255,136,0.06);display:flex;align-items:center;justify-content:center"><span style="color:var(--grn);font-size:1.2rem;font-weight:700">&#10003;</span></div>
+      <div style="padding:16px 20px;text-align:center;display:flex;align-items:center;justify-content:center"><span style="color:var(--tx3);font-size:1.1rem;font-weight:700">&times;</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.4fr 1.3fr 1fr;border-top:1px solid var(--bd);background:var(--dk2);border-radius:0 0 16px 16px">
+      <div style="padding:16px 20px;font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:600;color:var(--tx2);display:flex;align-items:center">Size Options</div>
+      <div style="padding:16px 20px;text-align:center;background:rgba(0,255,136,0.06);display:flex;align-items:center;justify-content:center"><span style="font-family:'Montserrat',sans-serif;font-size:0.8rem;font-weight:600;color:var(--grn)">Pro, Nano &amp; Custom</span></div>
+      <div style="padding:16px 20px;text-align:center;display:flex;align-items:center;justify-content:center"><span style="font-size:0.8rem;color:var(--tx3)">Limited</span></div>
+    </div>
   </div>
 </section>
 
